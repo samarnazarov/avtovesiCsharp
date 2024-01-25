@@ -1,0 +1,17 @@
+D:\MyProjects\C#\Avtovesi\Avtovesi\bin\Debug\Avtovesi.exe.config
+D:\MyProjects\C#\Avtovesi\Avtovesi\bin\Debug\Avtovesi.exe
+D:\MyProjects\C#\Avtovesi\Avtovesi\bin\Debug\Avtovesi.pdb
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.csproj.AssemblyReference.cache
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.Properties.Resources.resources
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.csproj.GenerateResource.cache
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.csproj.CoreCompileInputs.cache
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.exe
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.pdb
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.FormNastroyka.resources
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.Glavnaya.resources
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.Spravka.resources
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.Zagruzka.resources
+D:\MyProjects\C#\Avtovesi\Avtovesi\bin\Debug\INIFileParser.dll
+D:\MyProjects\C#\Avtovesi\Avtovesi\bin\Debug\INIFileParser.xml
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.csproj.CopyComplete
+D:\MyProjects\C#\Avtovesi\Avtovesi\obj\Debug\Avtovesi.LIkeWindows.resources
