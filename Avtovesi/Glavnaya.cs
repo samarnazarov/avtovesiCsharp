@@ -114,10 +114,10 @@ namespace Avtovesi
         private void записьВБазуToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Строка подключения к базе данных Access
-            /*string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\repo\Avtovesi\AvtovesiDataBase.accdb;Persist Security Info=False;";
+            string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\repo\Avtovesi\AvtovesiDataBase.accdb;Persist Security Info=False;";
 
             // SQL-запрос для вставки данных
-            string insertQuery = "INSERT INTO avtoData (date, licencePlate, tara, netto, brutto) VALUES (@Value1, @Value2, @Value3, @Value4, @Value5)";
+            string insertQuery = "INSERT INTO avtoData (id,date, licencePlate, tara, netto, brutto) VALUES (@Value0,@Value1, @Value2, @Value3, @Value4, @Value5)";
 
             // Создание подключения
             using (OleDbConnection connection = new OleDbConnection(connectionString))
@@ -126,6 +126,7 @@ namespace Avtovesi
                 using (OleDbCommand command = new OleDbCommand(insertQuery, connection))
                 {
                     // Определение параметров и их значений
+                    command.Parameters.AddWithValue("@Value0", 3);
                     command.Parameters.AddWithValue("@Value1", "02-02-2024");
                     command.Parameters.AddWithValue("@Value2", "85Q123AA");
                     command.Parameters.AddWithValue("@Value3", "22.5");
@@ -144,45 +145,7 @@ namespace Avtovesi
                     catch (Exception ex)
                     {
                         MessageBox.Show($"Ошибка при выполнении запроса: {ex.Message}");
-                    }*/
-
-                    // Строка подключения к базе данных Access
-                    string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\repo\Avtovesi\AvtovesiDataBase.accdb;Persist Security Info=False;";
-
-                    // SQL-запрос для чтения данных
-                    string selectQuery = "SELECT * FROM avtoData";
-
-                    // Создание подключения
-                    using (OleDbConnection connection = new OleDbConnection(connectionString))
-                    {
-                        // Создание команды
-                        using (OleDbCommand command = new OleDbCommand(selectQuery, connection))
-                        {
-                            // Открытие подключения
-                            connection.Open();
-
-                            try
-                            {
-                                // Выполнение команды и получение объекта чтения данных
-                                using (OleDbDataReader reader = command.ExecuteReader())
-                                {
-                                    // Перебор результатов запроса
-                                    while (reader.Read())
-                                    {
-                                // Чтение значений полей из текущей записи
-                                /*string value1 = reader["Поле1"].ToString();
-                                string value2 = reader["Поле2"].ToString();
-                                string value3 = reader["Поле3"].ToString();*/
-
-                                // Вывод данных
-                                MessageBox.Show($"П{reader["date"].ToString()}");
-                                    }
-                                }
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show($"Ошибка при выполнении запроса: {ex.Message}");
-                            }
+                    }         
                         
                 }
             }
