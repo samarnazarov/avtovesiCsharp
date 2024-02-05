@@ -17,8 +17,8 @@ namespace Avtovesi
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Zagruzka());
-            //Application.Run(new Glavnaya());
-            Application.Run(new LIkeWindows());
+            Application.Run(new Glavnaya());
+            //Application.Run(new LIkeWindows());
         }
     }
 }

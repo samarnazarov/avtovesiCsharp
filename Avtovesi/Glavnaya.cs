@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Net.Http;
@@ -106,6 +107,83 @@ namespace Avtovesi
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Произошла ошибка: {ex.Message}");
+                }
+            }
+        }
+
+        private void записьВБазуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Строка подключения к базе данных Access
+            /*string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\repo\Avtovesi\AvtovesiDataBase.accdb;Persist Security Info=False;";
+
+            // SQL-запрос для вставки данных
+            string insertQuery = "INSERT INTO avtoData (date, licencePlate, tara, netto, brutto) VALUES (@Value1, @Value2, @Value3, @Value4, @Value5)";
+
+            // Создание подключения
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                // Создание команды с параметрами
+                using (OleDbCommand command = new OleDbCommand(insertQuery, connection))
+                {
+                    // Определение параметров и их значений
+                    command.Parameters.AddWithValue("@Value1", "02-02-2024");
+                    command.Parameters.AddWithValue("@Value2", "85Q123AA");
+                    command.Parameters.AddWithValue("@Value3", "22.5");
+                    command.Parameters.AddWithValue("@Value4", "65.5");
+                    command.Parameters.AddWithValue("@Value5", "88.0");
+
+                    // Открытие подключения
+                    connection.Open();
+
+                    try
+                    {
+                        // Выполнение команды
+                        int rowsAffected = command.ExecuteNonQuery();
+                        MessageBox.Show($"Добавлено {rowsAffected} строк.");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Ошибка при выполнении запроса: {ex.Message}");
+                    }*/
+
+                    // Строка подключения к базе данных Access
+                    string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\repo\Avtovesi\AvtovesiDataBase.accdb;Persist Security Info=False;";
+
+                    // SQL-запрос для чтения данных
+                    string selectQuery = "SELECT * FROM avtoData";
+
+                    // Создание подключения
+                    using (OleDbConnection connection = new OleDbConnection(connectionString))
+                    {
+                        // Создание команды
+                        using (OleDbCommand command = new OleDbCommand(selectQuery, connection))
+                        {
+                            // Открытие подключения
+                            connection.Open();
+
+                            try
+                            {
+                                // Выполнение команды и получение объекта чтения данных
+                                using (OleDbDataReader reader = command.ExecuteReader())
+                                {
+                                    // Перебор результатов запроса
+                                    while (reader.Read())
+                                    {
+                                // Чтение значений полей из текущей записи
+                                /*string value1 = reader["Поле1"].ToString();
+                                string value2 = reader["Поле2"].ToString();
+                                string value3 = reader["Поле3"].ToString();*/
+
+                                // Вывод данных
+                                MessageBox.Show($"П{reader["date"].ToString()}");
+                                    }
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show($"Ошибка при выполнении запроса: {ex.Message}");
+                            }
+                        
                 }
             }
         }
