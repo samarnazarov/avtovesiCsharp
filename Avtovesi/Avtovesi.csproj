@@ -75,6 +75,12 @@
     <Compile Include="Spravka.Designer.cs">
       <DependentUpon>Spravka.cs</DependentUpon>
     </Compile>
+    <Compile Include="Webbrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Webbrowser.Designer.cs">
+      <DependentUpon>Webbrowser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Zagruzka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="Spravka.resx">
       <DependentUpon>Spravka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Webbrowser.resx">
+      <DependentUpon>Webbrowser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zagruzka.resx">
       <DependentUpon>Zagruzka.cs</DependentUpon>

@@ -32,3 +32,4 @@ D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.csproj.CoreCompileInputs.cache
 D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.csproj.CopyComplete
 D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.exe
 D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.pdb
+D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.Webbrowser.resources

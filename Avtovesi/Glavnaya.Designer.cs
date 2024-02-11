@@ -36,6 +36,7 @@
             this.отчетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.суточныйОтчетToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.месячныйОтчетToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.записьВБазуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +59,8 @@
             this.Tara = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Netto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Brutto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.записьВБазуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.прочееToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.веббраузерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -79,7 +81,8 @@
             this.запуститьToolStripMenuItem,
             this.отчетыToolStripMenuItem,
             this.настройкиToolStripMenuItem,
-            this.помощьToolStripMenuItem});
+            this.помощьToolStripMenuItem,
+            this.прочееToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1385, 28);
@@ -129,6 +132,13 @@
             this.месячныйОтчетToolStripMenuItem.Name = "месячныйОтчетToolStripMenuItem";
             this.месячныйОтчетToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.месячныйОтчетToolStripMenuItem.Text = "Месячный отчет";
+            // 
+            // записьВБазуToolStripMenuItem
+            // 
+            this.записьВБазуToolStripMenuItem.Name = "записьВБазуToolStripMenuItem";
+            this.записьВБазуToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.записьВБазуToolStripMenuItem.Text = "Запись в базу";
+            this.записьВБазуToolStripMenuItem.Click += new System.EventHandler(this.записьВБазуToolStripMenuItem_Click);
             // 
             // настройкиToolStripMenuItem
             // 
@@ -332,12 +342,20 @@
             this.Brutto.Name = "Brutto";
             this.Brutto.Width = 125;
             // 
-            // записьВБазуToolStripMenuItem
+            // прочееToolStripMenuItem
             // 
-            this.записьВБазуToolStripMenuItem.Name = "записьВБазуToolStripMenuItem";
-            this.записьВБазуToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.записьВБазуToolStripMenuItem.Text = "Запись в базу";
-            this.записьВБазуToolStripMenuItem.Click += new System.EventHandler(this.записьВБазуToolStripMenuItem_Click);
+            this.прочееToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.веббраузерToolStripMenuItem});
+            this.прочееToolStripMenuItem.Name = "прочееToolStripMenuItem";
+            this.прочееToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.прочееToolStripMenuItem.Text = "Прочее";
+            // 
+            // веббраузерToolStripMenuItem
+            // 
+            this.веббраузерToolStripMenuItem.Name = "веббраузерToolStripMenuItem";
+            this.веббраузерToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.веббраузерToolStripMenuItem.Text = "Веббраузер";
+            this.веббраузерToolStripMenuItem.Click += new System.EventHandler(this.веббраузерToolStripMenuItem_Click);
             // 
             // Glavnaya
             // 
@@ -404,6 +422,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Brutto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem записьВБазуToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem прочееToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem веббраузерToolStripMenuItem;
     }
 }
 
