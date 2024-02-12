@@ -33,3 +33,6 @@ D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.csproj.CopyComplete
 D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.exe
 D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.pdb
 D:\repo\Avtovesi\Avtovesi\obj\Debug\Avtovesi.Webbrowser.resources
+D:\repo\Avtovesi\Avtovesi\bin\Debug\HtmlAgilityPack.dll
+D:\repo\Avtovesi\Avtovesi\bin\Debug\HtmlAgilityPack.pdb
+D:\repo\Avtovesi\Avtovesi\bin\Debug\HtmlAgilityPack.xml
